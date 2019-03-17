@@ -1,9 +1,0 @@
-Reinstall icon and Splash screen
---------------------------------
-ionic cordova resources --icon
-ionic cordova resources --splash
-
-
-
-Ionic Native PLUGINS
----------------------
