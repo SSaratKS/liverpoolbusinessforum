@@ -18,3 +18,8 @@ Fodder Canteen, G5, 67-83 Norfolk St, Liverpool L1 0BG
 Fodder:
 Meeting Venue Map
 https://www.google.co.uk/maps/place/Fodder+Canteen/@53.3955259,-2.9821872,15z/data=!4m2!3m1!1s0x0:0x28a609622667aab3?sa=X&ved=0ahUKEwjh3pDssZnbAhUML8AKHVCOAagQ_BIIowEwCg
+
+##Follow Us
+Facebook: https://www.facebook.com/LiverpoolBusinessForum/
+
+Twitter: https://twitter.com/LpoolBizForum
