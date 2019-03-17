@@ -1,0 +1,135 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">Join Us</div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="padding-left">
+      <h2>Here's how you can ask for your invitation</h2>
+    </div>
+    <div class="block-title">1. See where you fit in</div>
+    <div class="block block-strong">
+      <p>
+        Check the members and see if you complement our existing members.
+      </p>
+      <p>
+        <a href="/member-meetings/">
+          <button class="button button-big button-fill">Check Members</button>
+        </a>
+      </p>
+    </div>
+
+    <div class="block-title">2. Ask for Invitation</div>
+    <div class="block block-strong">
+      <p>
+        If you believe you can add something unique to our group ask for a guest invitation from a member you know or download here.
+      </p>
+      <p>
+        <a href="#" class="button button-big button-fill button-raised popup-open" data-popup=".get-invitation">Get your Invitation</a>
+      </p>
+    </div>
+
+    <div class="block-title">3. You will receive an invitation</div>
+    <div class="block block-strong">
+      <p>
+        Providing there is no conflict of interest with an existing member you will receive an invitation to the next breakfast.
+      </p>
+    </div>
+
+    <div class="block-title">4. Guest welcome</div>
+    <div class="block block-strong">
+      <p>
+        Bring your business cards and a 60 second introduction.
+      </p>
+    </div>
+
+    <div class="block-title">5. Membership Fees</div>
+    <div class="block block-strong">
+      <p>
+        Liverpool Business Forum is a non profit club which works for the members. All fees are used entirely for the development of the club.
+        <br><br>
+        Membership fees are £175 per year. There is nothing else to pay. This includes the fortnightly breakfasts.
+        <br><br>
+        <img class="forum-logo center" src="img/lbf/LBF_Logo.png" alt="Liverpool Business Forum">
+        <br>
+        Fees are due on 1st October or a pro-rate fee due on the month of joining.
+        <br><br>
+        Guests may attend up to two breakfasts before joining.
+      </p>
+      <p>
+        <a href="#" class="button button-big button-fill button-raised popup-open" data-popup=".get-invitation">Join as a Member</a>
+      </p>
+    </div>
+
+    <div class="popup get-invitation">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="title">Download</div>
+            <div class="right"><a href="#" class="link popup-close">Close</a></div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="block-title">Get your Invitation</div>
+          <div class="block block-strong">
+            <p>
+              You will be asked for your name, business name, phone number, email and breakfast choice.
+            </p>
+            <p>
+              <a class="external" href="http://liverpoolbusinessforum.co.uk/wp-content/uploads/2017/08/Guest-Invitation.pdf" target="_blank">
+                <button class="button button-big button-fill">Download</button>
+              </a>
+            </p>
+          </div>
+          <div class="block-title">Membership Application</div>
+          <div class="block block-strong">
+            <p>
+      	      If you have already attended as a guest and would like to apply for membership download the "membership" application.
+            </p>
+            <p>
+              <a class="external" href="http://liverpoolbusinessforum.co.uk/wp-content/uploads/2017/08/Membership-application-form-applicant.pdf" target="_blank">
+                <button class="button button-big button-fill">Download</button>
+              </a>
+            </p>
+          </div>
+          <div class="block-title">Membership Secretary</div>
+          <div class="block block-strong">
+            <p>
+              You can forward the applications to our Membership Secretary at
+              <br><br>
+              <a class="external" href="mailto:liverpoolbusinessforum@gmail.com"
+                target="_blank">
+                liverpoolbusinessforum@gmail.com
+              </a>
+              <br><br>
+  	          Membership Fees are £175 per year.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+  return {
+    methods: {
+
+    },
+    on: {
+      pageBeforeRemove: function () {
+        var self = this;
+        // Destroy popup when page removed
+        if (self.popup) self.popup.destroy();
+      },
+    }
+  }
+</script>

@@ -1,0 +1,86 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">About the Forum</div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="padding-top padding-left">
+      <h2>Liverpool Business Forum</h2>
+    </div>
+
+    <div class="block-title">Forum History</div>
+    <div class="block block-strong">
+      <p>
+        Liverpool Business Forum is a group of business owners that work together to develop relationships and leads for one another’s businesses.  Collectively we are a powerful group that can lobby for more opportunities to work within the private and public sectors.
+      </p>
+      <p>
+        <a href="#" class="button button-big button-fill button-raised popup-open" data-popup=".demo-popup">Read More</a>
+      </p>
+    </div>
+
+    <div class="block-title">Join Us</div>
+    <div class="block block-strong">
+      <p>
+        If you want to learn more about the Liverpool Business Forum and would like to come as a guest to our next meeting, please click the button below,
+      </p>
+      <p>
+        <a href="/join-us/">
+          <button class="button button-big button-fill">Join Us</button>
+        </a>
+      </p>
+      <p>
+        You can also contact our Membership Secretary at
+        <br><br>
+        <a class="external" href="mailto:liverpoolbusinessforum@gmail.com"
+          target="_blank">
+          liverpoolbusinessforum@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <div class="popup demo-popup">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="title">Forum History</div>
+            <div class="right"><a href="#" class="link popup-close">Close</a></div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="block block-strong">
+            <p>
+              We work collaboratively within a trusted environment for the betterment of the forum and the local community.  We recommend and develop business referrals based on the trust and recommendations that we deliver excellence.
+              <br><br>
+              Started in 2011 we have a committed membership who are looking to grow.  We are based in the Baltic Triangle area of Liverpool.
+              <br><br>
+              We meet fortnightly at Fodder Canteen and a selection of outside and internal speakers are selected to talk on the latest business development for the benefit of forum members.  We develop opportunities for new businesses for on another.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+  return {
+    methods: {
+
+    },
+    on: {
+      pageBeforeRemove: function () {
+        var self = this;
+        // Destroy popup when page removed
+        if (self.popup) self.popup.destroy();
+      },
+    }
+  }
+</script>

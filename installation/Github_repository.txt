@@ -1,0 +1,12 @@
+GITHUB COMMIT CHANGES
+----------------------
+
+git init
+git config --global user.email "sarat@s3kdevelopers.com"
+git config --global user.name "S3K Developers"
+
+git remote add origin https://github.com/SSaratKS/liverpoolbusinessforum.git
+git remote set-url origin https://github.com/SSaratKS/liverpoolbusinessforum.git
+git pull origin master
+
+git rm -r --cached .

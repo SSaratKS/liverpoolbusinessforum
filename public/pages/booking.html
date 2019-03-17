@@ -1,0 +1,78 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+          </a>
+        </div>
+        <div class="title">Bookings</div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="block-title">Booking History</div>
+      <div class="block block-strong">
+        <p>
+          If you have any questions, please either email Sarah Howarth at <a class="external" href="mailto:liverpoolbusinessforum@gmail.com"
+            target="_blank">
+            liverpoolbusinessforum@gmail.com
+          </a>
+          or a member of the forum.
+        </p>
+        <div class="row">
+          <div class="col-100 tablet-50">
+            <button class="button button-big button-fill color-green" @click="openPassword">Book Now</button>
+            <br>
+          </div>
+          <div class="col-100 tablet-50">
+            <button class="button button-big button-fill" @click="openPassword">Change/Cancel Booking
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-title ">Breakfast Meetings</div>
+      <div class="block block-strong ">
+        <p class="padding-left padding-right">
+          Meetings are on alternate Tuesdays.
+          <br><br>
+          7:00 am-8:30 am
+          <br><br>
+          Fodder Canteen, G5, 67-83 Norfolk St, Liverpool L1 0BG
+          <br><br>
+          <a class="external" href="https://www.google.co.uk/maps/place/Fodder+Canteen/@53.3955259,-2.9821872,15z/data=!4m2!3m1!1s0x0:0x28a609622667aab3?sa=X&ved=0ahUKEwjh3pDssZnbAhUML8AKHVCOAagQ_BIIowEwCg"
+            target="_blank">
+            Fodder: Meeting Venue Map
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</template>
+<script>
+  return {
+    methods: {
+      openPassword: function () {
+        var app = this.$app;
+        app.dialog.password('Enter member access', function (password) {
+          if(password == "lbf") {
+            window.open("https://docs.google.com/forms/d/e/1FAIpQLSdSTLuNDdCSZzvp9GBZdNBusJWLHTF_YCg-YouYHCpHPZ3XbA/viewform","_blank");
+          } else {
+            app.dialog.alert('Incorrect password!! Please try again');
+          }
+        });
+      },
+    },
+    on: {
+      pageBeforeRemove: function () {
+        var self = this;
+        // Destroy popup when page removed
+        if (self.popup) self.popup.destroy();
+      },
+    }
+  }
+</script>

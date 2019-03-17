@@ -1,0 +1,90 @@
+/*
+START OF CUSTOMISED CSS
+*/
+
+.ng-hide {
+  /* this is just another form of hiding an element */
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (orientation:portrait) and (min-width: 360px) and (max-width: 425px){
+  .status_text_align {
+    margin-top: calc(20px + 10vh);
+    margin-bottom: calc(20px + 10vh);
+  }
+}
+
+@media screen and (orientation:portrait) and (min-width: 426px){
+  .status_text_align {
+    margin-top: calc(20px + 20vh);
+    margin-bottom: calc(20px + 20vh);
+  }
+}
+
+@media screen and (orientation:landscape) and (min-width: 900px){
+  .status_text_align {
+    margin-top: calc(15px + 20vh);
+    margin-bottom: calc(15px + 20vh);
+  }
+}
+
+.status_text_align_items {
+  //height: 100%;
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.content_text {
+  font-size: calc(16px + 0.5vw);
+  item-md-body-text-font-size: calc(1.4rem + 0.5vw);
+  item-wp-body-text-font-size: calc(1.4rem + 0.5vw);
+  item-ios-body-text-font-size: calc(1.7rem + 0.5vw);
+}
+
+@media (min-width: 700px) {
+  .forum-image {
+    left: 20%;
+    width: 45%;
+    right: auto;
+    height: auto;
+    top: auto;
+  }
+  .forum-logo {
+    left: 20%;
+    width: 55%;
+    right: auto;
+    height: auto;
+    top: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .forum-image {
+    left: 20%;
+    width: 70%;
+    right: auto;
+    height: auto;
+    top: auto;
+  }
+  .forum-logo {
+    left: 20%;
+    width: 85%;
+    right: auto;
+    height: auto;
+    top: auto;
+  }
+}
+
+/*
+END OF CUSTOMISED CSS
+*/

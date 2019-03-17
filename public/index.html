@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Liverpool Business Forum</title>
+  <link rel="stylesheet" href="packages/css/framework7.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="apple-touch-icon" href="img/f7-icon.png">
+  <link rel="icon" href="img/lbf-icon.png">
+
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+
+    <div class="panel panel-left panel-cover">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner sliding">
+            <div class="title">Main Menu</div>
+          </div>
+        </div>
+
+        <div class="page-content">
+          <div class="block-title">Contact Us</div>
+          <div class="block">
+            <p>
+              For More Details,<br><br>
+              Email us at: <br>
+              <a class="external" href="mailto:liverpoolbusinessforum@gmail.com"
+                target="_blank">
+                liverpoolbusinessforum@gmail.com
+              </a>
+            </p>
+            <p class="ng-hide">
+              Call us at: <br>
+              <a class="external" href="tel:+44 7909171072" target="_blank">
+              +44 (0)7909171072
+              </a>
+            </p>
+          </div>
+          <div class="block-title">Secondary Menu</div>
+          <div class="list links-list">
+            <ul>
+              <li>
+                <a href="#" data-panel="right" class="panel-open">Select a theme</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-right panel-reveal">
+      <div class="view view-init view-right" name="right" data-url="/">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner sliding">
+              <div class="title">Settings</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <p>Interested in changing the theme of your application.</p>
+            </div>
+            <div class="block-title">Select a theme</div>
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="./index.html?theme=ios" class="external">iOS Theme</a>
+                </li>
+                <li>
+                  <a href="./index.html?theme=md" class="external">Material (MD) Theme</a>
+                </li>
+                <li>
+                  <a href="/color-themes/">Color Themes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div>
+
+            <div class="title sliding">Welcome</div>
+          </div>
+        </div>
+
+        <div class="page-content">
+          <div class="item-media">
+            <br>
+            <img class="forum-image center" src="img/lbf/LBF-flyer.jpg" alt="Liverpool Business Forum">
+          </div>
+          <div class="block-title ">Liverpool Business Forum</div>
+          <div class="block block-strong ">
+            <p class="padding-left padding-right">
+              Networking, business support, collaboration and external speakers.
+            </p>
+            <p class="padding-left padding-right">
+              <a href="/about/">
+                <button class="button button-big button-fill">About the Forum</button>
+              </a>
+            </p>
+          </div>
+
+          <div class="block-title ">Breakfast Meetings</div>
+          <div class="block block-strong ">
+            <p class="padding-left padding-right">
+              Meetings are on alternate Tuesdays.
+              <br><br>
+              7:00 am-8:30 am
+              <br><br>
+              Fodder Canteen, G5, 67-83 Norfolk St, Liverpool L1 0BG
+              <br><br>
+              <a class="external" href="https://www.google.co.uk/maps/place/Fodder+Canteen/@53.3955259,-2.9821872,15z/data=!4m2!3m1!1s0x0:0x28a609622667aab3?sa=X&ved=0ahUKEwjh3pDssZnbAhUML8AKHVCOAagQ_BIIowEwCg"
+                target="_blank">
+                Fodder: Meeting Venue Map
+              </a>
+            </p>
+            <p class="padding-left padding-right">
+              Use this to book, change your booking date, change your breakfast or cancel.
+            </p>
+            <p class="padding-left padding-right">
+              <a href="/booking/">
+                <button class="button button-big button-fill color-green">Book / Change Dates</button>
+              </a>
+            </p>
+          </div>
+
+          <div class="block-title ">Members</div>
+          <div class="block block-strong ">
+            <p class="padding-left padding-right">
+              Find out more about our members here.
+            </p>
+            <p class="padding-left padding-right">
+              <a href="/member-meetings/">
+                <button class="button button-big button-fill">Meet the members</button>
+              </a>
+            </p>
+          </div>
+
+          <div class="block-title ">Open Day</div>
+          <div class="block block-strong ">
+            <p class="padding-left padding-right">
+              We often have great visiting speakers.
+            </p>
+            <div class="row">
+              <div class="col-100 tablet-50">
+                <a href="/join-us/">
+                  <button class="button button-big button-fill">Join Us</button>
+                </a>
+                <p class="padding-left">
+                  Ask to be informed of the next open day.
+                </p>
+              </div>
+              <div class="col-100 tablet-50">
+                <a class="external" href="https://us16.list-manage.com/subscribe?u=9c908429583c9691d7f595976&id=a81151eec5" target="_blank">
+                  <button class="button button-big button-fill color-green">
+                    Send me info
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-title ">Past Events</div>
+          <div class="block block-strong ">
+            <p class="padding-left padding-right">
+              Click here to view the pictures of past events,
+              <br><br>
+              <a href="/photo-browser/">
+                <button class="button button-big button-fill">View Pictures</button>
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+  <script src="packages/js/framework7.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

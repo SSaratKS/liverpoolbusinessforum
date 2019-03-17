@@ -1,0 +1,120 @@
+Cordova Installation
+--------------------
+
+set ANDROID_HOME=C:\Users\sarat\AppData\Local\Android\sdk
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_131
+set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\;
+
+cordova create LiverpoolBusinessForumV2 com.s3kdevelopers.liverpoolbusinessforum LiverpoolBusinessForumV2
+
+cordova platform add ios
+cordova platform add android
+cordova platform add browser
+
+=========================================================================================================
+
+Verifying the projects
+----------------------
+
+cordova platform ls
+cordova requirements
+
+PS C:\Users\sarat\Desktop\V2 Ionic Apps\LiverpoolBusinessForumV2> cordova platform ls
+Installed platforms:
+  android 7.1.4
+  browser 5.0.4
+  ios 4.5.5
+
+Available platforms:
+  osx ~4.0.1
+  windows ~6.0.0
+
+=========================================================================================================
+
+Building the project
+--------------------
+
+cordova prepare
+cordova build
+
+
+=========================================================================================================
+
+Android Project Build
+-----------------------
+
+cordova build android --prod --release
+
+
+cd C:\Users\sarat\Desktop\V2 Ionic Apps\LiverpoolBusinessForumV2\
+
+
+Keystore:
+----------
+C:\Users\sarat\Desktop\MobileAppDev.keystore
+
+APK:
+----
+C:\Users\sarat\Desktop\IonicApp\HeartFailure\platforms\android\build\outputs\apk\android-release-unsigned.apk
+
+
+Signing the app
+----------------
+
+jarsigner:
+----------
+cd C:\Program Files\Java\jdk1.8.0_131\bin
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore C:\Users\sarat\Desktop\MobileAppDev.keystore C:\Users\sarat\Desktop\IonicApp\HeartFailure\platforms\android\build\outputs\apk\release\android-release-unsigned.apk sarvepalli
+
+
+Zipalign
+--------
+cd C:\Users\sarat\AppData\Local\Android\sdk\build-tools\28.0.0\
+
+zipalign -f -v 4 C:\Users\sarat\Desktop\IonicApp\HeartFailure\platforms\android\build\outputs\apk\release\android-release-unsigned.apk C:\Users\sarat\Desktop\IonicApp\HeartFailure\platforms\android\build\outputs\apk\release\HeartFailure-signed.apk
+
+cd C:\Users\sarat\Desktop\IonicApp\HeartFailure
+
+Output File:
+------------
+C:\Users\sarat\Desktop\IonicApp\HeartFailure\platforms\android\build\outputs\apk\
+
+=========================================================================================================
+
+Generate GITHUB SSH
+--------------------
+
+ssh-keygen -t rsa -C "support@s3kdevelopers.com"
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDT+rmyAfaECFle1lnBJGnpQdB7eIQ0z0dSsw/A2yRHHebnvtF9slqgWVotBgQ4tpnTZ5FotIi/rGoiSYhkccBri/TyHZujfbQ1b+n3w/ReSjESOIE+yHZ0xf9HlYmqKs8ty5rVLEder9EVZYbm+UqDE4wynDrZhHzfRgXyk+N9Uj3NGECnkqcHNLCruMMf33hi3pFBYLHYnaYLWAugB3jVzTUv2KE+llFSIRzrRPWjalQ9sFcUK72pG+PG5yl1f88wNBqaVaZiUXU/mGdwUUnDFt1n+wOfLQ4gLS+tevlk/dumJm9rjj1UW67zwIR+ENyHcIRMheyPv2ygY+Evo+AR support@s3kdevelopers.com
+
+
+=========================================================================================================
+
+BITBUCKET GITHUB COMMIT CHANGES
+-------------------------------
+
+git init
+git config --global user.email "support@s3kdevelopers.com"
+git config --global user.name "S3K Developers Private Limited"
+
+git remote add origin https://s3kdevelopers@bitbucket.org/s3kdeveloperspvtltd/liverpool-business-forum.git
+git remote set-url origin https://s3kdevelopers@bitbucket.org/s3kdeveloperspvtltd/liverpool-business-forum.git
+git pull
+
+git checkout master
+git add .
+git commit -m "LBF Ver 0.1"
+git push -u origin master
+
+App Generated Password
+----------------------
+IOSBuild
+
+
+git rm -r --cached .
+git add .
+This will remove everything and add it back in with the correct files ignored.
+
+=========================================================================================================

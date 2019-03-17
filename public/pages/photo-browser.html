@@ -1,0 +1,140 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+          </a>
+        </div>
+        <div class="title">Past Events</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title ">Fodder Canteen</div>
+      <div class="block block-strong ">
+        <a href="#" @click="openFodderCanteen">
+          <img class="forum-image center" src="img/pics/Vicki_Keenan.png" alt="Vikki Keenan">
+        </a>
+      </div>
+
+      <div class="block-title ">Business Connections <br> (<i>November 7, 2018</i>)</div>
+      <div class="block block-strong ">
+        <a href="#" @click="openGaryMiller">
+          <img class="forum-image center" src="img/pics/Gary_Miller.jpg" alt="Gary Miller">
+        </a>
+        <br>
+        <a href="#" class="button button-big button-raised button-fill" @click="openBusinessConnections">View More</a>
+      </div>
+
+      <div class="block-title ">The Growth of the Creative and Digital Sector <br> (<i>June 20, 2018</i>)</div>
+      <div class="block block-strong ">
+        <a href="#" @click="openDigitalSector">
+          <img class="forum-image center" src="img/pics/Liam.png" alt="Liam">
+        </a>
+        <br>
+        <a class="external" href="http://liverpoolbusinessforum.co.uk/the-growth-of-the-creative-and-digital-sector-baltic-buzz" target="_blank">
+          <button class="button button-big button-fill">Visit the post</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</template>
+<script>
+  return {
+    data: function () {
+      return {
+        photos: [
+          {
+            url: 'img/pics/Gary_Miller.jpg',
+            caption: 'Gary Miller'
+          },
+          {
+            url: 'img/pics/Gill_Hunt.jpg',
+            caption: 'Gillian Hunt'
+          },
+          {
+            url: 'img/pics/Robert_Zatz.jpg',
+            caption: 'Robert Zatz'
+          },
+          {
+            url: 'img/pics/GWL_Solicitors.jpg',
+            caption: 'GWL Solicitors'
+          },
+          {
+            url: 'img/pics/Join_Us.jpg',
+            caption: 'Vicki Keenan'
+          }
+        ],
+        photosFodder: [
+          {
+            url: 'img/pics/Vicki_Keenan.png',
+            caption: 'Vicki Keenan'
+          }
+        ],
+        photosGaryMiller: [
+          {
+            url: 'img/pics/Gary_Miller.jpg',
+            caption: 'Gary Miller'
+          }
+        ],
+        photosDigitalSector: [
+          {
+            url: 'img/pics/Liam.png',
+            caption: 'Liam'
+          }
+        ],
+      }
+    },
+    methods: {
+      openGaryMiller: function () {
+        const self = this;
+        self.garyMiller.open();
+      },
+      openDigitalSector: function () {
+        const self = this;
+        self.digitalSector.open();
+      },
+      openFodderCanteen: function () {
+        const self = this;
+        self.fodderCanteen.open();
+      },
+      openBusinessConnections: function () {
+        const self = this;
+        self.businessConnections.open();
+      },
+    },
+    on: {
+      pageInit: function () {
+        const self = this;
+        // Create PBs when page init
+        self.fodderCanteen = self.$app.photoBrowser.create({
+          photos: self.photosFodder,
+          theme: 'dark',
+        });
+        self.digitalSector = self.$app.photoBrowser.create({
+          photos: self.photosDigitalSector,
+          theme: 'dark',
+        });
+        self.businessConnections = self.$app.photoBrowser.create({
+          photos: self.photos,
+          theme: 'dark',
+        });
+        self.garyMiller = self.$app.photoBrowser.create({
+          photos: self.photosGaryMiller,
+          theme: 'dark',
+        });
+      },
+      pageBeforeRemove: function () {
+        const self = this;
+        // Destroy PBs on page remove
+        self.fodderCanteen.destroy();
+        self.digitalSector.destroy();
+        self.businessConnections.destroy();
+        self.garyMiller.destroy();
+      },
+    }
+  };
+</script>
