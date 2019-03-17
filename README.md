@@ -3,6 +3,11 @@ This is a web based membership application for Liverpool Business Forum
 
 Web App: https://s3kdevelopers.com/lbfv3
 
+Developed By:
+Sarat Kumar Sarvepalli
+S3K Developers UK Limited
+https://s3kdevelopers.com
+
 ## Breakfast Meetings
 Meetings are on alternate Tuesdays.
 
