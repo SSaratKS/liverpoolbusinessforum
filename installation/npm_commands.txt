@@ -30,5 +30,4 @@ Step 3
  firebase login
  firebase init
 
- cordova build browser
  firebase deploy

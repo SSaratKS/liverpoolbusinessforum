@@ -3,6 +3,8 @@ This is a web based membership application for Liverpool Business Forum
 
 Web App: https://s3kdevelopers.com/lbfv3
 
+Firebase: https://s3kdevelopers-lbf.firebaseapp.com/
+
 Developed By:
 Sarat Kumar Sarvepalli,
 S3K Developers UK Limited,
