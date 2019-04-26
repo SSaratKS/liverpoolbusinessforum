@@ -9,17 +9,18 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
   <title>Liverpool Business Forum</title>
   <link rel="stylesheet" href="packages/css/framework7.min.css">
+  <link rel="stylesheet" href="packages/css/framework7.bundle.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="apple-touch-icon" href="img/f7-icon.png">
   <link rel="icon" href="img/lbf-icon.png">
 
 </head>
-<body>
+<body oncontextmenu="return false;">
   <div id="app">
     <div class="statusbar"></div>
 
-    <div class="panel panel-left panel-cover">
+    <div class="panel panel-left panel-cover theme-light">
       <div class="page">
         <div class="navbar">
           <div class="navbar-inner sliding">
@@ -33,31 +34,45 @@
             <p>
               For More Details,<br><br>
               Email us at: <br>
-              <a class="external" href="mailto:liverpoolbusinessforum@gmail.com"
+              <a class="external" href="mailto:liverpoolbusinessforum@gmail.com?subject=Request for Guest Invitation"
                 target="_blank">
                 liverpoolbusinessforum@gmail.com
               </a>
             </p>
-            <p class="ng-hide">
-              Call us at: <br>
-              <a class="external" href="tel:+44 7909171072" target="_blank">
-              +44 (0)7909171072
-              </a>
-            </p>
           </div>
+
+          <div class="block-title">Primary Menu</div>
+          <div class="list links-list">
+            <ul>
+              <li>
+                <a href="/about/" class="panel-close">About Us</a>
+              </li>
+              <li>
+                <a href="/join-us/" class="panel-close">Join Us</a>
+              </li>
+            </ul>
+          </div>
+
           <div class="block-title">Secondary Menu</div>
           <div class="list links-list">
             <ul>
               <li>
-                <a href="#" data-panel="right" class="panel-open">Select a theme</a>
+                <a href="#" data-panel="right" class="panel-open">Settings</a>
               </li>
             </ul>
+          </div>
+          <div class="block">
+            <p>
+              <a class="external panel-close" href="https://www.eventbrite.co.uk/o/liverpool-business-forum-13591174886" target="_blank">
+                <img class="center" width="100%" src="img/lbf/eventbrite_register.jpg" alt="S3K Developers Private Ltd">
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="panel panel-right panel-reveal">
+    <div class="panel panel-right panel-reveal theme-dark panel-resizable">
       <div class="view view-init view-right" name="right" data-url="/">
         <div class="page">
           <div class="navbar">
@@ -108,6 +123,7 @@
             <br>
             <img class="forum-image center" src="img/lbf/LBF-flyer.jpg" alt="Liverpool Business Forum">
           </div>
+
           <div class="block-title ">Liverpool Business Forum</div>
           <div class="block block-strong ">
             <p class="padding-left padding-right">
@@ -127,7 +143,7 @@
             </p>
             <p class="padding-left padding-right">
               <a href="/about/">
-                <button class="button button-big button-fill">About the Forum</button>
+                <button class="button button-large button-fill">About the Forum</button>
               </a>
             </p>
           </div>
@@ -151,7 +167,7 @@
             </p>
             <p class="padding-left padding-right">
               <a href="/booking/">
-                <button class="button button-big button-fill color-green">Book / Change Dates</button>
+                <button class="button button-large button-fill color-teal">Book / Change Dates</button>
               </a>
             </p>
           </div>
@@ -163,7 +179,7 @@
             </p>
             <p class="padding-left padding-right">
               <a href="/member-meetings/">
-                <button class="button button-big button-fill">Meet the members</button>
+                <button class="button button-large button-fill">Meet the members</button>
               </a>
             </p>
           </div>
@@ -176,7 +192,7 @@
             <div class="row">
               <div class="col-100 tablet-50">
                 <a href="/join-us/">
-                  <button class="button button-big button-fill">Join Us</button>
+                  <button class="button button-large button-fill">Join Us</button>
                 </a>
                 <p class="padding-left">
                   Ask to be informed of the next open day.
@@ -184,10 +200,36 @@
               </div>
               <div class="col-100 tablet-50">
                 <a class="external" href="https://us16.list-manage.com/subscribe?u=9c908429583c9691d7f595976&id=a81151eec5" target="_blank">
-                  <button class="button button-big button-fill color-green">
+                  <button class="button button-large button-fill color-teal">
                     Send me info
                   </button>
                 </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-title">Upcoming Events</div>
+          <div class="block block-strong">
+            <h3>
+              Bringing Hollywood to Littlewoods
+            </h3>
+            <div class="row">
+              <div class="col-100 tablet-50">
+                <p>
+                  <img class="center" src="img/events/Hollywood_to_Littlewoods.jpg" width=80% alt="GDPR">
+                </p>
+              </div>
+              <div class="col-100 tablet-50">
+                <a class="external" href="https://www.eventbrite.co.uk/e/liverpool-business-forum-presents-bringing-hollywood-to-littlewoods-registration-60433694808" target="_blank">
+                  <button class="button button-large button-fill">Register for the event</button>
+                </a>
+                <p class="padding-left">
+                  An overview of the history of the Littlewoods building, and an in depth look at plans for the renovation and creation of a world class hub for film and TV.
+                  <br><br>
+                  <b>Time:</b> 10 am - 12 pm
+                  <br><br>
+                  <b>Location:</b> Gardner Systems, 1 Faraday Road, Liverpool. L13 1EH
+                </p>
               </div>
             </div>
           </div>
@@ -198,14 +240,17 @@
               Click here to view the pictures of past events,
               <br><br>
               <a href="/photo-browser/">
-                <button class="button button-big button-fill">View Pictures</button>
+                <button class="button button-large button-fill">View Pictures</button>
               </a>
             </p>
           </div>
 
         </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="packages/js/framework7.min.js"></script>
+  <script src="packages/js/framework7.bundle.js"></script>
   <script src="js/routes.js"></script>
   <script src="js/app.js"></script>
 </body>
